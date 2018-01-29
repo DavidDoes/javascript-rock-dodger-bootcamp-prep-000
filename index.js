@@ -98,8 +98,8 @@ function createRock(x) {
 function endGame() {
   clearInterval(gameInterval);
   var removeRocks = document.getElementsByClassName('rock');
-  for (var i = removeRocks.length; i--){
-    removeRocks[i].remove[i];
+  for (var i = removeRocks.length; i--;){
+    removeRocks[i].remove();
   }
   return alert('YOU LOSE!');
 }
