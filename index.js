@@ -52,21 +52,15 @@ function checkCollision(rock) {
 }
 
 function createRock(x) {
-  const rock = document.createElement('div')
-
-  rock.className = 'rock'
-  rock.style.left = `${x}px`
-
+  const rock = document.createElement('div');
+  rock.className = 'rock';
+  rock.style.left = `${x}px`;
   // Hmmm, why would we have used `var` here?
   var top = 0;
-
-  rock.style.top = `${top}px`; //calling top, convert to px
+  rock.style.top = `${top}px`;
   
-  /**
-   * Now that we have a rock, we'll need to append
-   * it to GAME and move it downwards.
-   */
-  GAME.appendChild(rock);
+  // Now that we have a rock, we'll need to append it to GAME and move it downwards.
+  GAME.appendChild(rock);   
 
   /**
    * This function moves the rock. (2 pixels at a time
