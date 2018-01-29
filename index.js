@@ -101,7 +101,7 @@ function endGame() {
   for (var i = removeRocks.length; i--;){
     removeRocks[i].remove();
   }
-  window.requestAnimationFrame()
+  window.removeEventListener('keydown', rocks);
   return alert('YOU LOSE!');
 }
 
