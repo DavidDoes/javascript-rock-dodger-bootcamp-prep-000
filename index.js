@@ -132,14 +132,6 @@ function moveDodger(e) {
    * we've declared for you above.)
    * And be sure to use the functions declared below!
    */
-}
-
-function moveDodgerLeft() {
-  // implement me!
-  /**
-   * This function should move DODGER to the left
-   * (mabye 4 pixels?). Use window.requestAnimationFrame()!
-   */
     if(e.which === LEFT_ARROW){
       e.preventDefault();
       e.stopPropagation();
@@ -149,6 +141,15 @@ function moveDodgerLeft() {
       e.stopPropagation();
       moveDodgerRight();
     }
+}
+
+function moveDodgerLeft() {
+  // implement me!
+  /**
+   * This function should move DODGER to the left
+   * (mabye 4 pixels?). Use window.requestAnimationFrame()!
+   */
+
 }
 
 function moveDodgerRight() {
