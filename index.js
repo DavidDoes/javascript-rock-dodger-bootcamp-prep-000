@@ -153,7 +153,7 @@ function moveDodgerLeft() {
     const left = positionToInteger(dodger.style.left);
     
     if (left > 0){
-      
+      dodger.style.left = `${}`
     }
   })
 }
