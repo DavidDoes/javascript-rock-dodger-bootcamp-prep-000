@@ -118,7 +118,7 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval);
-  removeChild(moveDodger);
+  document.removeEventListener(moveDodger);
 }
 
 function moveDodger(e) {
