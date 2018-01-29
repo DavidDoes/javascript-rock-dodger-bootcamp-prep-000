@@ -98,7 +98,7 @@ function createRock(x) {
 function endGame() {
   clearInterval(gameInterval);
   var removeRocks = document.getElementsByClassName('rock');
-  for (var i = )
+  for (var i = removeRocks.length)
   return alert('YOU LOSE!');
 }
 
